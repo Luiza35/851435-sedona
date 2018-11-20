@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Луиза Исанова](https://up.htmlacademy.ru/htmlcss/23/user/851435).
-* Наставник: [Янн Север](https://htmlacademy.ru/profile/10ktroubles)
+* Наставник: [Глеб
+Цырульников](https://htmlacademy.ru/profile/id492663)
 
 ---
 
