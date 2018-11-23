@@ -24,7 +24,7 @@
     	<h2 class="visually-hidden">Фильтр гостиниц</h2>
     	<!--Этот заголовок будет скрыт-->
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <p class="filter-item">
+        <div class="filter-item">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -42,8 +42,8 @@
             </li>
           </ul>
         </fieldset>
-        </p>
-        <p class="filter-item">
+        </div>
+        <div class="filter-item">
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
@@ -60,11 +60,12 @@
             </li>
           </ul>
         </fieldset>
-        </p>
+        </div>
         <p class="filter-item">
-          <label for="text-field">Стоимость в сутки(р):</label>
-          <input type="text" name="cost" id="text-field" value="от 0">
-          <input type="text" name="cost" id="text-field" value="до 3000">
+          <label for="cost-field-from">Стоимость в сутки(р):</label>
+          <input type="text" name="cost" id="cost-field-from" value="от 0">
+          <label for="cost-field-before">Стоимость в сутки(р):</label>
+          <input type="text" name="cost" id="cost-field-before" value="до 3000">
           <button class="filter-cost" type="button"></button>
           <button class="filter-cost" type="button"></button>
         </p>
@@ -153,7 +154,7 @@
 
     <footer class="main-footer">
     	<a class="contact-link" href="#"><span class="footer-contact">#visitsedona</span></a>
-    	<p class="footer-social">
+    	<p class="footer-social"></p>
         <ul class="footer-social-list">
           <li class="socials-item"><a class="socials-button socials-button-twitter" href="#">
             <span class="visually-hidden">Твиттер</span>
@@ -171,8 +172,7 @@
             </a>
           </li>
         </ul>
-      </p>
-    	<p class="footer-copyright">
+      <p class="footer-copyright">
     		<b>website by</b>
     		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
     			  <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="HTML Academy">
