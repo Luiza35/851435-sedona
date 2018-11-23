@@ -14,7 +14,7 @@
     		<ul class="site-navigation">
     			<li><a href="info.html">Информация</a></li>
     			<li><a href="foto.html">Фото и видео</a></li>
-    			<li> <a href="map.html">Карта штата</a></li>
+    			<li><a href="map.html">Карта штата</a></li>
     			<li class="site-navigation-current">Гостиницы</li>
     		</ul>
     	</nav>
@@ -24,6 +24,7 @@
     	<h2 class="visually-hidden">Фильтр гостиниц</h2>
     	<!--Этот заголовок будет скрыт-->
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <p class="filter-item">
         <fieldset>
           <legend>Инфраструктура:</legend>
           <ul>
@@ -41,6 +42,8 @@
             </li>
           </ul>
         </fieldset>
+        </p>
+        <p class="filter-item">
         <fieldset>
           <legend>Тип жилья:</legend>
           <ul>
@@ -57,8 +60,35 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit" class="filter-button button">Показать
+        </p>
+        <p class="filter-item">
+          <label for="text-field">Стоимость в сутки(р):</label>
+          <input type="text" name="cost" id="text-field" value="от 0">
+          <input type="text" name="cost" id="text-field" value="до 3000">
+          <button class="filter-cost" type="button"></button>
+          <button class="filter-cost" type="button"></button>
+        </p>
+        <button type="submit" class="filter-button">Показать
         </button>
+        <div class="found-container">
+          <h3 class="found-title">Найдено: 3</h3>
+            <p class="found-section">Сортировка:</p>
+              <ul class="found-list">
+                <li class="found-item-current">По цене</li>
+                <li><a class="found-button" href="#">По типу</a></li>
+                <li><a class="found-button" href="#">По рейтингу</a></li>
+              </ul>
+            <p class="">  
+              <span class="visually-hidden">Стрелочка вверх</span>
+              <!--Этот текст будет скрыт-->
+              <a class="icon-button-1" href="#">
+                <img src="img/icon-up-dir.svg" width="11" height="10" alt="Стрелочка вверх"></a>
+              <span class="visually-hidden">Стрелочка вниз</span>
+              <!--Этот текст будет скрыт-->  
+              <a class="icon-button-2" href="#">
+                <img src="img/icon-down-dir.svg" width="11" height="10" alt="Стрелочка вниз"></a>
+            </p>
+        </div>
       </form>  
     </section>
 
