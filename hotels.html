@@ -23,7 +23,43 @@
     <section class="filters">
     	<h2 class="visually-hidden">Фильтр гостиниц</h2>
     	<!--Этот заголовок будет скрыт-->
-    	<!--Здесь будет форма-->
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool">Бассейн</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">
+              <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi">
+              <label for="filter-wi-fi">wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">Гостиница</label>
+            </li>
+            <li class="filter-option"><input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">Мотель</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
+              <label for="filter-apartments">Апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать
+        </button>
+      </form>  
     </section>
 
     <section class="catalog">
@@ -87,13 +123,25 @@
 
     <footer class="main-footer">
     	<a class="contact-link" href="#"><span class="footer-contact">#visitsedona</span></a>
-    	<div class="footer-social">
-    		<ul>
-    			<li><img src="img/twitter.svg" width="17" height="15" alt="Твитер"><a class="social-button" href="#">Твитер</a></li>
-    			<li><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"><a class="social-button" href="#">Фейсбук</a></li>
-    			<li><img src="img/youtube.svg" width="20" height="16" alt="Ютюб"><a class="social-button" href="#">Ютюб</a></li>
-    		</ul>
-    	</div>
+    	<p class="footer-social">
+        <ul class="footer-social-list">
+          <li class="socials-item"><a class="socials-button socials-button-twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <!--Этот текст будет скрыт-->
+            </a>
+          </li>
+          <li class="socials-item"><a class="socials-button socials-button-facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <!--Этот текст будет скрыт-->
+            </a>
+          </li>
+          <li class="socials-item"><a class="socials-button socials-button-youtube" href="#">
+            <span class="visually-hidden">Ютюб</span>
+            <!--Этот текст будет скрыт-->
+            </a>
+          </li>
+        </ul>
+      </p>
     	<p class="footer-copyright">
     		<b>website by</b>
     		  <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">

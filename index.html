@@ -86,16 +86,19 @@
     		<h2>Заинтересовались?</h2>
     		<p class="search-info">Укажите предполагаемые даты поездки, и мы покажем вам предложения гостиниц в Седоне</p>
         <div class="search-container">
-          <!-- Здесь будет форма -->
           <h3 class="search-title">Поиск гостиницы в Седоне</h3>
           <form action="https://echo.htmlacademy.ru" method="post">
-            <label for="date-1-field">Дата заезда:</label>
-              <input type="search" name="date-1" id="date-1-field" value="24 апреля 2017">
+            <p class="search-item">
+              <label for="search-date">Дата заезда:</label>
+              <input type="search" name="date-1" id="search-date" value="24 апреля 2017">
               <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
-            <label for="date-2-field" >Дата выезда:</label>
-              <input type="search" name="date-2" id="date-2-field" value="4 июля 2017">
+            </p>
+            <p class="search-item">  
+              <label for="search-date" >Дата выезда:</label>
+              <input type="search" name="date-2" id="search-date" value="4 июля 2017">
               <img src="img/calendar.svg" width="21" height="22" alt="Календарь">
-              <input type="submit" value="Найти">
+            </p>  
+              <button class="button" type="submit">Найти</button>
           </form>
         </div>
     	</section>
@@ -103,7 +106,7 @@
       <section class="map-image">
         <h2 class="visually-hidden">Дорожная карта городка Седона</h2>
         <!--Этот заголовок будет скрыт-->
-        <img src="img/map.png" width="1200" height="593" alt="Дорожная карта городка Седона">
+        <!--Здесь будет карта Седоны-->
       </section>
     </main>
 
@@ -111,13 +114,25 @@
       <p class="contact">
     	  <a class="contact-link" href="#"><span class="footer-contact">#visitsedona</span></a>
       </p>  
-    	<div class="footer-social">
+    	<p class="footer-social">
     		<ul class="footer-social-list">
-    			<li><img src="img/twitter.svg" width="17" height="15" alt="Твитер"><a class="social-button" href="#">Твитер</a></li>
-    			<li><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"><a class="social-button" href="#">Фейсбук</a></li>
-    			<li><img src="img/youtube.svg" width="20" height="16" alt="Ютюб"><a class="social-button" href="#">Ютуб</a></li>
+    			<li class="socials-item"><a class="socials-button socials-button-twitter" href="#">
+            <span class="visually-hidden">Твиттер</span>
+            <!--Этот текст будет скрыт-->
+            </a>
+          </li>
+    			<li class="socials-item"><a class="socials-button socials-button-facebook" href="#">
+            <span class="visually-hidden">Фейсбук</span>
+            <!--Этот текст будет скрыт-->
+            </a>
+          </li>
+    			<li class="socials-item"><a class="socials-button socials-button-youtube" href="#">
+            <span class="visually-hidden">Ютюб</span>
+            <!--Этот текст будет скрыт-->
+            </a>
+          </li>
     		</ul>
-    	</div>
+    	</p>
     	<p class="footer-copyright">
     		<b>website by</b>
     		<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">
