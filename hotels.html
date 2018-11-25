@@ -23,7 +23,7 @@
     <section class="filters">
     	<h2 class="visually-hidden">Фильтр гостиниц</h2>
     	<!--Этот заголовок будет скрыт-->
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <form class="filter" method="post" action="https://echo.htmlacademy.ru">
         <div class="filter-item">
         <fieldset>
           <legend>Инфраструктура:</legend>
@@ -61,16 +61,22 @@
           </ul>
         </fieldset>
         </div>
-        <p class="filter-item">
-          <label for="cost-field-from">Стоимость в сутки(р):</label>
-          <input type="text" name="cost" id="cost-field-from" value="от 0">
-          <label for="cost-field-before">Стоимость в сутки(р):</label>
-          <input type="text" name="cost" id="cost-field-before" value="до 3000">
-          <button class="filter-cost" type="button"></button>
-          <button class="filter-cost" type="button"></button>
-        </p>
+        <div class="filter-item">
+          <h3 class="filter-item-title">Стоимость в сутки(р):</h3>
+          <label for="cost-field-from">от</label>
+          <input type="text" name="cost" id="cost-field-from" value="0">
+          <label for="cost-field-before">до</label>
+          <input type="text" name="cost" id="cost-field-before" value="3000">
+        <div class="range-container">
+          <div class="range-band">
+            <div class="range-bar"></div>
+          </div>
+          <div class="range-slider range-slider-min"></div>
+          <div class="range-slider range-slider-max"></div>
+        </div>  
         <button type="submit" class="filter-button">Показать
         </button>
+        </div>
         <div class="found-container">
           <h3 class="found-title">Найдено: 3</h3>
             <p class="found-section">Сортировка:</p>
@@ -79,7 +85,7 @@
                 <li><a class="found-button" href="#">По типу</a></li>
                 <li><a class="found-button" href="#">По рейтингу</a></li>
               </ul>
-            <p class="">  
+            <p class="icon-buttons">  
               <span class="visually-hidden">Стрелочка вверх</span>
               <!--Этот текст будет скрыт-->
               <a class="icon-button-1" href="#">
@@ -110,9 +116,13 @@
     			</p>
     				  <a class="button" href="detail.html">Подробнее</a>
     				  <a class="button" href="#">Забронировать</a>
-    		  <p class="stars">
-                <img src="img/star.svg" width="18" height="17" alt="4 звезды из 5"></p>
-    			<p class="rating-title">Рейтинг:8,5</p>
+    		  <p class="product-rating-stars">
+            <span class="cube-icon icon-star rating-star"></span>
+            <span class="cube-icon icon-star rating-star"></span>
+            <span class="cube-icon icon-star rating-star"></span>
+            <span class="cube-icon icon-star rating-star"></span>
+          </p>
+    			<p class="product-rating-number">Рейтинг:8,5</p>
     		</li>
     		<li class="catalog-item">
     			<h3>
@@ -127,9 +137,12 @@
     			</p>
     				  <a class="button" href="detail.html">Подробнее</a>
     				  <a class="button" href="#">Забронировать</a>
-    		  <p class="stars">
-                <img src="img/star.svg" width="18" height="17" alt="3 звезды из 5"></p>
-    			<p class="rating-title">Рейтинг:8,9</p>
+    		  <p class="product-rating-stars">
+            <span class="cube-icon icon-star rating-star"></span>
+            <span class="cube-icon icon-star rating-star"></span>
+            <span class="cube-icon icon-star rating-star"></span>
+          </p>
+    			<p class="product-rating-number">Рейтинг:8,9</p>
     		</li>
     		<li class="catalog-item">
     			<h3>
@@ -144,10 +157,11 @@
     			</p>
     				  <a class="button" href="detail.html">Подробнее</a>
     				  <a class="button" href="#">Забронировать</a>
-    		  <p class="stars"> 
-                <img src="img/star.svg" width="18" height="17" alt="2 звезды из 5">
+    		  <p class="product-rating-stars">
+            <span class="cube-icon icon-star rating-star"></span>
+            <span class="cube-icon icon-star rating-star"></span>
           </p>
-    			<p class="rating-title">Рейтинг:9,2</p>
+    			<p class="product-rating-number">Рейтинг:9,2</p>
     		</li>
     	</ul>
     </section>
