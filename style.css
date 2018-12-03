@@ -121,9 +121,29 @@ h2 {
 	list-style: none;
 }
 
+.reasons-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.other-reason-list {
+	display: flex;
+	padding: 0;
+}
+
 .reason-item,
 .other-reason-item {
 	text-align: center;
+	display: flex;
+	margin: 0;
+}
+
+.other-reason-item {
+	flex-wrap: wrap;
+	width: 400px;
+	justify-content: center;
 }
 
 .reason-item h3,
@@ -132,21 +152,70 @@ h2 {
 	line-height: 21px;
 }
 
-.search-info {
-	display: flex;
-	font-size: 14px;
-	line-height: 24px;
-	text-align: center;
+.reason-item-info {
+	background-color: #81b3d2;
+	color: #ffffff;
+}
+
+.reason-item-image {
+	margin: 0;
+}
+
+.search-form {
+	width: 576px;
 	margin: 0 auto;
 }
 
+.search-info {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.search-title {
+	box-sizing: border-box;
+	width: 576px;
+	height: 86px;
+}
+
+.search-container {
+	width: 458px;
+	padding: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .search-item {
+	position: relative;
+	display: flex;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 }
 
+.search-item label {
+	padding-right: 20px;
+}
+
+.search-item input {
+	display: block;
+	box-sizing: border-box;
+	width: 346px;
+	height: 38px;
+	margin-bottom: 30px;
+	padding-left: 12px;
+}
+
+.icon-calendar {
+	position: absolute;
+	z-index: 2;
+	top: 8px;
+	right: 10px;
+}
+
 .search-title {
+	margin-top: 50px;
+	margin-bottom: 55px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -198,13 +267,33 @@ h2 {
 	fill: #81b3d2;
 }
 
+.quantity-items{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 54px;
+}
+
 .quantity-item {
+	display: flex;
+	
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
 }
 
+.quantity-item label {
+	margin-right: 40px;
+}
+
+.quantity-item label:nth-child(2) {
+	margin-right: 26px;
+}
+
 .quantity-item input {
+	display: block;
+	width: 115px;
+	height: 38px;
 	border: none;
 	background-color: #f2f2f2;
 }
@@ -225,7 +314,10 @@ h2 {
 }
 
 .search-button {
-	font: inherit;
+	box-sizing: border-box;
+	width: 458px;
+	height: 58px;
+    font: inherit;
 	text-align: center;
 	vertical-align: middle;
 	text-transform: uppercase;
@@ -287,7 +379,12 @@ h2 {
 	justify-content: center;
 }
 
+.socials-item:nth-last-child(n+1) {
+	margin-right: 8px;
+}
+
 .socials-button {
+	display: block;
 	width: 48px;
 	height: 48px;
 	background-color: #81b3d2;
@@ -324,10 +421,16 @@ h2 {
 }
 
 .footer-copyright a{
+	
+}
+
+.button-copyright {
 	background-image: url("img/logo-htmlacademy.svg");
 	color: #231f20;
 	background-repeat: no-repeat;
 	background-position: center;
+	display: block;
+	width: 117px;
 }
 
 .footer-copyright a:hover,
