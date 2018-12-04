@@ -105,10 +105,15 @@ h2 {
 }
 
 .container-welcome {
-	background-image: url("img/background-photo.jpg");
+	height: 780px;
+	background-image: url("img/polygon.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
     text-align: center;
+}
+
+.container img {
+	margin-top: 60px;
 }
 
 .welcome-text  {
@@ -749,9 +754,7 @@ position: absolute;
 	color: #b2b2b2;
 }
 
-.catalog-buttons {
-	display: inline-block;
-}
+
 
 .catalog-buttons .button-detail {
 	color: #ffffff;
