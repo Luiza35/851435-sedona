@@ -53,7 +53,7 @@ h2 {
 	width: 1200px;
 	background-color: #ffffff;
 	margin: 0 auto;
-	box-shadow: 10px 0 30px rgba(0,0,0,.4),-10px 0 30px rgba(0,0,0,.4);
+	box-shadow: 10px 0 15px rgba(0,0,0,.2),-10px 0 15px rgba(0,0,0,.2);
 }
 
 .main-navigation {
@@ -83,6 +83,7 @@ h2 {
 	padding: 0;
 }
 
+
 .site-navigation li:nth-child(n+3) {
 	order: 2;
 }
@@ -106,10 +107,12 @@ h2 {
 
 .container-welcome {
 	height: 780px;
+	margin: 0;
 	background-image: url("img/polygon.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
     text-align: center;
+    margin-top: -16px;
 }
 
 .container img {
@@ -293,13 +296,11 @@ h2 {
 .quantity-items{
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
 	margin-bottom: 54px;
 }
 
 .quantity-item {
 	display: flex;
-	
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: bold;
@@ -309,7 +310,7 @@ h2 {
 	margin-right: 40px;
 }
 
-.quantity-item label:nth-child(2) {
+.quantity-item:nth-child(2) label {
 	margin-right: 26px;
 }
 
@@ -443,10 +444,6 @@ h2 {
 	color: #231f20;
 }
 
-.footer-copyright a{
-	
-}
-
 .button-copyright {
 	background-image: url("img/logo-htmlacademy.svg");
 	color: #231f20;
@@ -473,11 +470,19 @@ h2 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
+	margin-top: -16px;
+
 }
 
 .filters-container {
 	width: 1056px;
 	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.filter {
+	display: flex;
 }
 
 .filter fieldset {
@@ -634,6 +639,7 @@ position: absolute;
 
 .found-container {
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
 	width: 1056px;
 	margin: 0 auto;
@@ -649,6 +655,10 @@ position: absolute;
 .found-list {
 	font-size: 12px;
 	line-height: 18px;
+}
+
+.found-section {
+	display: flex;
 }
 
 .found-list {
@@ -721,6 +731,10 @@ position: absolute;
 	margin-top: 62px;
 }
 
+.catalog-item-image {
+	margin: 0;
+}
+
 .catalog-item-info {
 	display: flex
 	flex-wrap: wrap;
@@ -754,9 +768,10 @@ position: absolute;
 	color: #b2b2b2;
 }
 
-
-
 .catalog-buttons .button-detail {
+	display: inline-block;
+	padding: 3px 16px;
+	margin-right: 6px;
 	color: #ffffff;
 	background-color: #81b3d2;
 	font-size: 14px;
@@ -776,6 +791,8 @@ position: absolute;
 }
 
 .catalog .button-reservation {
+	display: inline-block;
+	padding: 3px 16px;
 	color: #ffffff;
 	background-color: #766357;
 	font-size: 14px;
@@ -794,12 +811,21 @@ position: absolute;
 	color: #857871;
 }
 
+.rating-stars {
+	margin: 0;
+	margin-bottom: 47px;
+}
+
 .rating-star {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
-}  
+} 
+
+.rating-numbers {
+	margin: 0;
+} 
 
 .rating-number {
 	background-color: #f2f2f2;
