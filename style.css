@@ -24,15 +24,12 @@ img {
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -130,6 +127,10 @@ h2 {
 	margin: 0 auto;
 }
 
+.sedona-content {
+	width: 1200px;
+}
+
 .reasons {
 	font-size: 14px;
 	line-height: 26px;
@@ -138,49 +139,27 @@ h2 {
 
 .reasons-list,
 .other-reason-list {
-	list-style: none;
-}
-
-.reasons-list {
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	list-style: none;
+	margin: 0;
 	padding: 0;
 }
-
-.other-reason-list {
-	display: flex;
-	padding: 0;
-}
-
 .reason-item,
 .other-reason-item {
-	text-align: center;
 	display: flex;
-	margin: 0;
-}
-
-.other-reason-item {
-	flex-wrap: wrap;
+	text-align: center;
 	width: 400px;
-	justify-content: center;
-	vertical-align: middle;
+	margin: 0;
+
+	background-color: #f8f8f8;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .reason-item h3,
 .other-reason-item h3 {
 	font-size: 21px;
 	line-height: 21px;
-}
-
-.reason-item h3 {
-	margin-top: 40px;
-	margin-bottom: 60px;
-}
-
-.reason-item-info {
-	background-color: #81b3d2;
-	color: #ffffff;
 }
 
 .reason-item-image {
@@ -487,6 +466,17 @@ h2 {
 
 .filter fieldset {
 	border: none;
+	padding: 0;
+    margin: 0;
+}
+
+.filter legend {
+	margin-bottom: 23px;
+}
+
+.filter ul {
+	padding: 0;
+    margin: 0;
 }
 
 .filter-list {
@@ -495,31 +485,47 @@ h2 {
 	line-height: 21px;
 }
 
+.filter-option {
+	margin-bottom: 23px;
+	margin-left: 40px;
+}
+
 .filter legend, h3 {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
 }
 
-label {
+.filter-option label {
     position: relative;
+    display: block;
     cursor: pointer;
 }
 
-label::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -44px;
-    z-index: 1;
-    background-image: url("img/checkbox-on.svg");
+.filter-input-checkbox + label::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 26px;
+  height: 23px;
+  background-image: url("img/checkbox-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-input[type="checkbox"] {
-	display: none;
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -38px;
+  width: 26px;
+  height: 23px;
+  background-image: url("img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .filter-range {
+	margin-left: auto;
 	width: 330px;
 	color: #ffffff;
 }
@@ -659,6 +665,8 @@ position: absolute;
 
 .found-section {
 	display: flex;
+	margin-right: auto;
+	margin-left: 47px;
 }
 
 .found-list {
@@ -811,7 +819,15 @@ position: absolute;
 	color: #857871;
 }
 
+.catalog-rating {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: auto;
+}
+
 .rating-stars {
+	margin-left: auto;
 	margin: 0;
 	margin-bottom: 47px;
 }
