@@ -47,6 +47,7 @@ h2 {
 }
 
 .page {
+	
 	width: 1200px;
 	background-color: #ffffff;
 	margin: 0 auto;
@@ -129,6 +130,7 @@ h2 {
 	font-weight: bold;
 	text-align: center;
 	margin: 0 auto;
+	margin-bottom: 30px;
 }
 
 .sedona-content {
@@ -140,37 +142,80 @@ h2 {
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
+	margin-bottom: 55px;
+}
+
+.reason-item-info {
+	width: 400px;
 }
 
 .reasons-list,
-.other-reason-list {
-	display: flex;
-	flex-wrap: wrap;
+.other-reason-list,
+.continued-reason-list {
 	list-style: none;
 	margin: 0;
 	padding: 0;
 }
 
+.reasons-list {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+}
+
+.reason-item {
+	display: flex;
+}
+
+.reason-item:nth-child(1),
+.reason-item:nth-child(2) {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.other-reason-list {
+	display: flex;
+}
+
+.other-reason-list p {
+	margin: 0;
+}
+
 .reason-item,
 .other-reason-item {
-	display: flex;
-	flex-basis: 100%;
 	text-align: center;
-	width: 400px;
-	
 	margin: 0;
 	padding: 0;
 	background-color: #f8f8f8;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reason-item:nth-child(1),
+.reason-item:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.continued-reason-list {
+	display: flex;
+}
+
+.continued-reason-list p {
+	margin: 0;
 }
 
 .reason-item h3,
 .other-reason-item h3 {
 	font-size: 21px;
 	line-height: 21px;
+	margin: 0;
 }
 
-.reason-item-image {
+.reason-item-info p {
+	margin: 0;
+}
+
+.reason-item-image img{
 	margin: 0;
 }
 
@@ -200,7 +245,10 @@ h2 {
 }
 
 .search-container {
+	display: ;
+	
 	width: 458px;
+	background-color: #ffffff;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -356,6 +404,11 @@ h2 {
 	background-color: #5496bd;
 }
 
+.map-image {
+	height: 593px;
+	background-image: url("img/map.jpg");
+}
+
 .main-footer {
 	margin-top: 79px;
 	padding: 36px 0;
@@ -364,24 +417,25 @@ h2 {
 .footer-container {
 	display: flex;
 	width: 1056px;
+	justify-content: space-between;
 	align-items: center;
-	margin-right: 73px;
-	margin-left: 73px;
+	margin: 0 auto;
 }
 
 .footer-contact {
 	width: 240px;
-	margin-right: 88px;
+	margin-left: 60px;
 }
 
 .footer-social {
 	width: 400px;
-	margin-right: 120px;
+	margin-right: 88px;
 	text-align: center;
 }	
 
 .footer-copyright {
-	width: 241px;
+	width: 240px;
+	margin-right: 30px;
 }
 
 .footer-contact a {
