@@ -121,6 +121,11 @@ h2 {
 	margin-top: 60px;
 }
 
+.sedona-content {
+	margin-top: 55px;
+	width: 1200px;
+}
+
 .welcome-text  {
 	width: 576px;
 	display: flex;
@@ -133,20 +138,11 @@ h2 {
 	margin-bottom: 30px;
 }
 
-.sedona-content {
-	margin-top: 55px;
-	width: 1200px;
-}
-
 .reasons {
 	font-size: 14px;
 	line-height: 26px;
 	text-align: center;
 	margin-bottom: 55px;
-}
-
-.reason-item-info {
-	width: 400px;
 }
 
 .reasons-list,
@@ -163,6 +159,22 @@ h2 {
 	flex-wrap: wrap;
 }
 
+.other-reason-list {
+	display: flex;
+}
+
+.other-reason-list div {
+	margin-top: 55px;
+}
+
+.other-reason-list p {
+	margin: 0;
+}
+
+.reason-item-info {
+	width: 400px;
+}
+
 .reason-item {
 	display: flex;
 }
@@ -171,28 +183,6 @@ h2 {
 .reason-item:nth-child(2) {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: wrap;
-}
-
-.other-reason-list {
-	display: flex;
-}
-
-.other-reason-list p {
-	margin: 0;
-}
-
-.reason-item,
-.other-reason-item {
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	background-color: #f8f8f8;
-}
-
-.reason-item:nth-child(1),
-.reason-item:nth-child(2) {
-	display: flex;
 	flex-wrap: wrap;
 }
 
@@ -209,13 +199,58 @@ h2 {
 	font-size: 21px;
 	line-height: 21px;
 	margin: 0;
+	
+
+	background: rgba(255, 45, 82, 0.5);
 }
 
-.reason-item-info p {
+.reason-item,
+.other-reason-item {
+	text-align: center;
 	margin: 0;
+	padding: 0;
+	background-color: #f8f8f8;
 }
 
-.reason-item-image img{
+.reason-item:nth-child(1),
+.reason-item:nth-child(2) {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.reason-item:nth-child(2) h3 {
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+.reason-item h3 {
+	margin-top: 45px;
+	margin-right: 140px;
+	margin-left: 140px;
+}
+
+.other-reason-item h3 {
+	margin-top: 30px;
+	margin-right: 165px;
+	margin-left: 165px;
+}
+
+.reason-item p {
+	margin: 0;
+	margin-top: 30px;
+	margin-right: 60px;
+	margin-left: 60px;
+	margin-bottom: 80px;
+}
+
+.continued-reason-item p {
+	margin-right: 95px;
+	margin-left: 95px;
+	margin-bottom: 60px;
+}
+
+.reason-item-image img,
+.other-reason-item img {
 	margin: 0;
 }
 
