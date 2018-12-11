@@ -48,6 +48,8 @@ h2 {
 }
 
 .page {
+	position: relative;
+	bottom: 0;
 	width: 1200px;
 	background-color: #ffffff;
 	margin: 0 auto;
@@ -152,24 +154,135 @@ h2 {
 }
 
 .reason-item h3 {
+	padding-top: 45px;
+	padding-left: 137px;
+	padding-right: 137px;
 	font-size: 21px;
 	line-height: 21px;
 	margin: 0;
-	
+}
 
-	background: rgba(255, 45, 82, 0.5);
+.reason-item p {
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 60px;
+}
+
+.reason-item span {
+	display: block;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.reason-item span::before {
+	position: relative;
+	top: 12px;
+	left: 175px;
+	display: block;
+	content:"";
+	width: 10px;
+	height: 2px;
+	background-color: #ffffff;
+}
+
+.reason-item span::after {
+	position: relative;
+	top: -11px;
+	left: 214px;
+	display: block;
+	content:"";
+	width: 10px;
+	height: 2px;
+	background-color: #ffffff;
+}
+
+.reason-item:nth-child(n+6) span::before {
+	position: relative;
+	top: 12px;
+	left: 175px;
+	display: block;
+	content:"";
+	width: 10px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.reason-item:nth-child(n+6) span::after {
+	position: relative;
+	top: -11px;
+	left: 214px;
+	display: block;
+	content:"";
+	width: 10px;
+	height: 2px;
+	background-color: #000000;
+}
+
+.reason-item-gift h3 {
+	padding-top: 155px;
+	margin-bottom: 25px;
+}
+
+.reason-item-gift:nth-child(2) h3 {
+	position: relative;
+}
+
+.reason-item-gift:nth-child(2) h3::before {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 160px;
+	background-image: url("img/icon-1.svg");
+	width: 75px;
+	height: 72px;
+}
+
+.reason-item-gift:nth-child(3) h3 {
+	position: relative;
+}
+
+.reason-item-gift:nth-child(3) h3::before {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 163px;
+	background-image: url("img/icon-3.svg");
+	width: 74px;
+	height: 70px;
+}
+
+.reason-item-gift:nth-child(4) h3 {
+	position: relative;
+}
+
+.reason-item-gift:nth-child(4) h3::before {
+	content: "";
+	position: absolute;
+	top: 50px;
+	left: 165px;
+	background-image: url("img/icon-2.svg");
+	width: 64px;
+	height: 76px;
 }
 
 .reason-item {
 	text-align: center;
 	margin: 0;
 	padding: 0;
-	background-color: #f8f8f8;
+}
+
+.reason-item:nth-child(n+6) {
+	background-color: #eeeeee;
 }
 
 .reason-item,
 .reason-item-info {
 	width: 400px;
+}
+
+.reason-item-info {
+	color: #ffffff;
+	background-color: #81b3d2;
 }
 
 .reason-item-full-width {
@@ -186,6 +299,7 @@ h2 {
 }
 
 .search-form {
+	position: relative;
 	width: 576px;
 	margin: 0 auto;
 	margin-top: 50px;
@@ -227,7 +341,6 @@ h2 {
 	padding-top: 55px;
 	padding-bottom: 55px;
 	position: absolute;
-	left: 503px;
 	background-color: #ffffff;
 }
 
@@ -309,7 +422,6 @@ h2 {
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
-	
 	margin-bottom: 54px;
 }
 
@@ -355,13 +467,12 @@ h2 {
 
 .search-button {
 	display: block;
-	box-sizing: border-box;
 	width: 458px;
 	margin: 0 auto;
 	padding: 16px 167px;
-    font: inherit;
-	text-align: center;
-	vertical-align: middle;
+ 	font-size: 21px;
+ 	line-height: 26px;
+ 	font-weight: bold;
 	text-transform: uppercase;
 	background-color: #81b3d2;
 	color: #ffffff;
@@ -383,22 +494,29 @@ h2 {
 }
 
 .main-footer {
-	margin-top: 79px;
-	padding: 36px 0;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 auto;
+	width: 1200px;
+	color: #000000;
+	background-color: rgba(255, 255, 255, 0.9);
 }
 
 .footer-container {
 	display: flex;
-	width: 1056px;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 auto;
+	padding-left: 132px;
+	padding-right: 100px;
+	padding-top: 35px;
+	padding-bottom: 35px;
+
 }
 
 .footer-contact {
 	width: 240px;
 	margin: 0;
-	margin-left: 60px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -412,8 +530,18 @@ h2 {
 }	
 
 .footer-copyright {
+	display: flex;
 	width: 240px;
-	margin-right: 30px;
+}
+
+.footer-copyright p {
+	font-size: 14px;
+	line-height: 26px;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	margin-top: 6px;
+	margin-right: 8px;
 }
 
 .footer-social ul {
@@ -457,20 +585,6 @@ h2 {
 	background-image: url("img/youtube.svg");
 }
 
-.footer-copyright {
-	display: flex;
-	
-}
-
-.footer-copyright p {
-	font-size: 14px;
-	line-height: 26px;
-	text-align: center;
-	margin: 0;
-	margin-top: 6px;
-	margin-right: 8px;
-}
-	
 .button-copyright:hover svg,
 .button-copyright:focus svg {
 	fill: #81b3d2;
