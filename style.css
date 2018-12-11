@@ -223,8 +223,11 @@ h2 {
 }
 
 .form-search {
+	width: 576px;
+	padding-top: 55px;
+	padding-bottom: 55px;
 	position: absolute;
-	left: 560px;
+	left: 503px;
 	background-color: #ffffff;
 }
 
