@@ -48,7 +48,6 @@ h2 {
 }
 
 .page {
-	
 	width: 1200px;
 	background-color: #ffffff;
 	margin: 0 auto;
@@ -85,7 +84,7 @@ h2 {
 	margin-bottom: 15px;
 }
 
-.site-navigation li:nth-child(1) {
+.site-navigation li:nth-child(odd) {
 	margin-right: 147px;
 }
 
@@ -192,7 +191,11 @@ h2 {
 	margin-top: 50px;
 }
 
-.search-form h2 {
+.form-title {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: bold;
+	text-align: center;
 	margin: 0;
 	margin-bottom: 36px;
 }
@@ -206,21 +209,29 @@ h2 {
 }
 
 .search-title {
+	display: block;
 	box-sizing: border-box;
 	width: 576px;
-	height: 86px;
+	padding: 30px 55px;
+	margin-bottom: 55px;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #766357;
+	text-align: center;
+	border: none
 }
 
-.search-container {
-	display: ;
-	
-	width: 458px;
+.form-search {
+	position: absolute;
+	left: 560px;
 	background-color: #ffffff;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .search-item {
+	width: 458px;
+	margin: 0 auto;
 	position: relative;
 	display: flex;
 	font-size: 14px;
@@ -247,17 +258,6 @@ h2 {
 	z-index: 2;
 	top: 8px;
 	right: 10px;
-}
-
-.search-title {
-	margin-bottom: 55px;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
-	color: #ffffff;
-	background-color: #766357;
-	text-align: center;
-	border: none;
 }
 
 .search-title:hover,
@@ -302,7 +302,9 @@ h2 {
 	fill: #81b3d2;
 }
 
-.quantity-items{
+.quantity-items {
+	width: 458px;
+	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	
@@ -350,9 +352,11 @@ h2 {
 }
 
 .search-button {
+	display: block;
 	box-sizing: border-box;
 	width: 458px;
-	height: 58px;
+	margin: 0 auto;
+	padding: 16px 167px;
     font: inherit;
 	text-align: center;
 	vertical-align: middle;
@@ -463,16 +467,15 @@ h2 {
 	margin: 0;
 	margin-top: 6px;
 	margin-right: 8px;
-	
 }
 	
-.footer-copyright a:hover,
-.footer-copyright a:focus {
-	color: #81b3d2;
+.button-copyright:hover svg,
+.button-copyright:focus svg {
+	fill: #81b3d2;
 }
 
-.footer-copyright a:active {
-	color: #bdbbbc;
+.button-copyright:active svg {
+	fill: #bdbbbc;
 }
 
 /* Стилизация внутренней страницы */
