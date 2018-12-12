@@ -155,11 +155,11 @@ h2 {
 
 .reason-item h3 {
 	padding-top: 45px;
-	padding-left: 137px;
-	padding-right: 137px;
+	width: 151px;
+	margin: 0 auto;
 	font-size: 21px;
 	line-height: 21px;
-	margin: 0;
+	
 }
 
 .reason-item p {
@@ -231,7 +231,7 @@ h2 {
 	content: "";
 	position: absolute;
 	top: 50px;
-	left: 160px;
+	left: 39px;
 	background-image: url("img/icon-1.svg");
 	width: 75px;
 	height: 72px;
@@ -245,7 +245,7 @@ h2 {
 	content: "";
 	position: absolute;
 	top: 50px;
-	left: 163px;
+	left: 40px;
 	background-image: url("img/icon-3.svg");
 	width: 74px;
 	height: 70px;
@@ -259,7 +259,7 @@ h2 {
 	content: "";
 	position: absolute;
 	top: 50px;
-	left: 165px;
+	left: 45px;
 	background-image: url("img/icon-2.svg");
 	width: 64px;
 	height: 76px;
@@ -607,8 +607,8 @@ h2 {
 }
 
 .filters-container {
-	width: 1056px;
-	margin: 0 auto;
+	padding-left: 73px;
+	padding-right: 73px;
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
@@ -656,6 +656,15 @@ h2 {
     cursor: pointer;
 }
 
+.filter-input-checkbox:focus+ label{
+	outline: 1px auto #ffffff;
+}
+
+.filter-input-checkbox:disabled+ label {
+	color: #6a6a6a;
+}
+
+
 .filter-input-checkbox + label::after {
   content: "";
   position: absolute;
@@ -678,13 +687,22 @@ h2 {
   background-position: 0 0;
 }
 
-.filter-range {
+.filter-input-checkbox:checked:disabled + label::after {
+	background-image: url("img/checkbox-on-disabled.svg");
+} 
+
+.filter-input-checkbox:disabled + label::after {
+	background-image: url("img/checkbox-off-disabled.svg");
+}
+
+.filter-control {
 	margin-left: auto;
 	width: 330px;
 	color: #ffffff;
 }
 
 .filter-range-title {
+	margin-top: 0;
 	margin-bottom: 9px;
 	font-weight: 600;
 	font-size: 16px;
@@ -768,7 +786,11 @@ position: absolute;
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background: #ababab;
+}
+
+.range-toggle:focus {
+	outline: 1px auto #ffffff;
 }
 
 .range-toggle-min {
@@ -798,14 +820,19 @@ position: absolute;
 }
 
 .found-container {
+	padding-left: 73px;
+	padding-right: 73px;
+}
+
+.header-container {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	width: 1056px;
-	margin: 0 auto;
+	border-bottom: 1px solid #e5e5e5;
 }
 
 .found-title {
+	margin: 0;
+	margin-top: 30px;
+	margin-bottom: 30px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -819,6 +846,7 @@ position: absolute;
 
 .found-section {
 	display: flex;
+	align-items: center;
 	margin-right: auto;
 	margin-left: 47px;
 }
@@ -851,6 +879,18 @@ position: absolute;
 	color: #000000;
 }
 
+
+.icon-buttons-list {
+	display: flex;
+	margin: 0;
+	align-items: center;
+	list-style: none;
+}
+
+.icon-button-item:nth-child(1) {
+	margin-right: 12px;
+}
+
 .icon-triangle {
   background: none;
   border: none;
@@ -875,48 +915,13 @@ position: absolute;
 	fill: #81b3d2;
 }
 
-.catalog {
-	width: 1056px;
-	margin: 0 auto;
-}
-
 .catalog-list {
 	padding: 0;
 	list-style: none;
 }
 
-.catalog-item {
-	display: flex;
-}
-
-.catalog-item:nth-child(n+2) {
-	margin-top: 62px;
-}
-
-.catalog-item-image {
-	margin: 0;
-}
-
-.catalog-item-info {
-	display: flex;
-	flex-wrap: wrap;
-	box-sizing: border-box;
-	width: 364px;
-	padding-left: 30px;
-}
-
-
-.catalog-item-price {
-	display: flex;
-	width: 183px;
-	margin-bottom: px;
-	justify-content: space-between;
-}
-
-
 .catalog-list h3 {
 	margin: 0;
-	margin-bottom: 15px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -935,10 +940,46 @@ position: absolute;
 	color: #b2b2b2;
 }
 
-.catalog-buttons .button-detail {
-	display: inline-block;
+.catalog-item {
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.item {
+	display: flex;
+}
+
+.catalog-item:nth-child(n+2) {
+	margin-top: 62px;
+}
+
+.catalog-item-image {
+	order: -1;
+	margin: 0;
+}
+
+.catalog-item-info {
+	display: flex;
+	flex-wrap: wrap;
+	width: 258px;
+	padding-left: 30px;
+}
+
+.catalog-category {
+	margin: 0;
+	width: 110px;
+}
+
+.catalog-price {
+	margin: 0;
+	margin-left: 6px;
+	width: 142px;
+}
+
+.button-detail {
+	display: block;
+	box-sizing: border-box;
+	width: 110px;
 	padding: 3px 16px;
-	margin-right: 6px;
 	color: #ffffff;
 	background-color: #81b3d2;
 	font-size: 14px;
@@ -946,20 +987,23 @@ position: absolute;
 	font-weight: bold; 
 }
 
-.catalog .button-detail:hover,
-.catalog .button-detail:focus {
+.button-detail:hover,
+.button-detail:focus {
 	background-color: #669ec0;
 	color: #ffffff;
 }
 
-.catalog .button-detail:active {
+.button-detail:active {
 	background-color: #5496bd;
 	color: #88b6d1;
 }
 
-.catalog .button-reservation {
-	display: inline-block;
+.button-reservation {
+	display: block;
+	box-sizing: border-box;
+	width: 142px;
 	padding: 3px 16px;
+	margin-left: 6px;
 	color: #ffffff;
 	background-color: #766357;
 	font-size: 14px;
@@ -967,15 +1011,15 @@ position: absolute;
 	font-weight: bold;
 }
 
-.catalog .button-reservation:hover,
-.catalog .button-reservation:focus {
+.button-reservation:hover,
+.button-reservation:focus {
 	background-color: #604e43;
 	color: #ffffff;
 }
 
-.catalog .button-reservation:active {
+.button-reservation:active {
 	background-color: #503e33;
-	color: #857871;
+	color: #928a85;
 }
 
 .catalog-rating {
@@ -999,8 +1043,6 @@ position: absolute;
 
 .rating-numbers {
 	margin: 0;
+	background-color: #f2f2f2;
 } 
 
-.rating-number {
-	background-color: #f2f2f2;
-}
