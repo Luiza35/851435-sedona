@@ -324,7 +324,7 @@ h2 {
 	margin-bottom: 50px;
 }
 
-.search-title {
+.search-link {
 	display: block;
 	box-sizing: border-box;
 	width: 576px;
@@ -335,7 +335,25 @@ h2 {
 	color: #ffffff;
 	background-color: #766357;
 	text-align: center;
-	border: none
+}
+
+.search-link:hover,
+.search-link:focus {
+	background-color: #604e43;
+	color: #ffffff;
+}
+
+.search-link:active {
+	background-color: #503e33;
+	color: #857871;
+}
+
+.form-search {
+	display: none;
+}
+
+.form-search-show {
+	display: block;
 }
 
 .form-search {
@@ -370,24 +388,6 @@ h2 {
 	padding-left: 12px;
 }
 
-.icon-calendar {
-	position: absolute;
-	z-index: 2;
-	top: 8px;
-	right: 10px;
-}
-
-.search-title:hover,
-.search-title:focus {
-	background-color: #604e43;
-	color: #ffffff;
-}
-
-.search-title:active {
-	background-color: #503e33;
-	color: #857871;
-}
-
 .search-item input {
 	border: none;
 	background-color: #f2f2f2;
@@ -400,6 +400,13 @@ h2 {
 .search-item input:focus {
 	background-color: transparent;
 	border: 1px solid #e5e5e5;
+}
+
+.icon-calendar {
+	position: absolute;
+	z-index: 2;
+	top: 8px;
+	right: 10px;
 }
 
 .icon-calendar {
@@ -789,10 +796,6 @@ position: absolute;
   background: #ababab;
 }
 
-.range-toggle:focus {
-	outline: 1px auto #ffffff;
-}
-
 .range-toggle-min {
   left: 0;
 }
@@ -977,6 +980,7 @@ position: absolute;
 	margin: 0;
 	margin-left: 6px;
 	width: 142px;
+	cursor: pointer;
 }
 
 .catalog-list .button-detail {
