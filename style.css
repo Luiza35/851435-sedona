@@ -354,6 +354,11 @@ h2 {
 
 .form-search-show {
 	display: block;
+	animation: move 20s;
+}
+
+.form-search-show-error {
+	animation: shake 1s;
 }
 
 .form-search {
@@ -362,6 +367,32 @@ h2 {
 	padding-bottom: 55px;
 	position: absolute;
 	background-color: #ffffff;
+}
+
+@keyframes move {
+	transform: translateY(500px);
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
 
 .search-item {
@@ -455,6 +486,7 @@ h2 {
 	width: 38px;
 	border: none;
 	background-color: #f2f2f2;
+	text-align: center;
 }
 
 .quantity-item button {
@@ -500,6 +532,12 @@ h2 {
 .map-image {
 	height: 593px;
 	background-image: url("img/map.jpg");
+}
+
+.map-image iframe {
+	position: relative;
+	z-index: 2;
+	border: none;
 }
 
 .main-footer {
