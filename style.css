@@ -585,8 +585,15 @@ h2 {
 }
 
 .footer-copyright p {
-	margin: 0;
+	margin-top: 14px;
+	font-size: 14px;
+	line-height: 26px;
+}
 
+.footer-copyright a {
+	display: block;
+	width: 160px;
+	height: 36px;
 }
 
 .footer-social ul {
