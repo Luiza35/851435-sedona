@@ -1,10 +1,10 @@
 var link = document.querySelector(".search-link");
 var popup = document.querySelector(".form-search");
-var form = popup.querySelector("form");
-var date-arrival = popup.querySelector("[name=date-arrival]");
-var date-departure = popup.querySelector("[name=date-departure]");
-var quantity-adults = popup.querySelector("[name=quantity-adults]");
-var quantity-children = popup.querySelector("[name=quantity-children]");
+
+var datearrival = popup.querySelector("[name=date-arrival]");
+var datedeparture = popup.querySelector("[name=date-departure]");
+var quantityadults = popup.querySelector("[name=quantity-adults]");
+var quantitychildren = popup.querySelector("[name=quantity-children]");
 
 
 
@@ -15,10 +15,10 @@ var quantity-children = popup.querySelector("[name=quantity-children]");
     popup.classList.toggle("form-search-show");
 });
 
-	form.addEventListener("submit", function (evt) {
-  	if (!date-arrival.value || !date-departure.value || !quantity-adults.value || !quantity-children.value) {
+	popup.addEventListener("submit", function (evt) {
+  	if (!datearrival.value || !datedeparture.value || !quantityadults.value || !quantitychildren.value) {
   	evt.preventDefault();
-  	popup.classList.add("form-search-show-error");
+  	
   }
 });
 

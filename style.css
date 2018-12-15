@@ -354,11 +354,8 @@ h2 {
 
 .form-search-show {
 	display: block;
-	animation: move 20s;
-}
-
-.form-search-show-error {
-	animation: shake 1s;
+	animation-name: move;
+	animation-duration: 2s;
 }
 
 .form-search {
@@ -366,33 +363,22 @@ h2 {
 	padding-top: 55px;
 	padding-bottom: 55px;
 	position: absolute;
+	z-index: 3;
 	background-color: #ffffff;
 }
 
 @keyframes move {
-	transform: translateY(500px);
+0% {
+transform: translateY(-100px);
 }
 
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0);
-  }
+100% {
+transform: translateY(50px);
+}
+}
 
-  10%,
-  30%,
-  50%,
-  70%,
-  90% {
-    transform: translateX(-10px);
-  }
-
-  20%,
-  40%,
-  60%,
-  80% {
-    transform: translateX(10px);
-  }
+@keyframes scale {
+  transform: scale(0.25);
 }
 
 .search-item {
