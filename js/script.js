@@ -15,11 +15,4 @@ var quantitychildren = popup.querySelector("[name=quantity-children]");
     popup.classList.toggle("form-search-show");
 });
 
-	popup.addEventListener("submit", function (evt) {
-  	if (!datearrival.value || !datedeparture.value || !quantityadults.value || !quantitychildren.value) {
-  	evt.preventDefault();
-  	
-  }
-});
-
 
