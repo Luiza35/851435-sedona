@@ -355,7 +355,7 @@ h2 {
 .form-search-show {
 	display: block;
 	animation-name: move;
-	animation-duration: 2s;
+	animation-duration: 1s;
 }
 
 .form-search {
@@ -370,10 +370,6 @@ h2 {
 @keyframes move {
 0% {
 transform: translateY(-100px);
-}
-
-100% {
-transform: translateY(50px);
 }
 }
 
