@@ -124,7 +124,7 @@ h2 {
 }
 
 .sedona-content {
-	margin-top: 55px;
+	margin-top: 40px;
 	width: 1200px;
 }
 
@@ -161,7 +161,7 @@ h2 {
 	margin: 0 auto;
 	font-size: 21px;
 	line-height: 21px;
-	
+
 }
 
 .reason-item p {
@@ -302,9 +302,9 @@ h2 {
 
 .search-form {
 	position: relative;
-	width: 576px;
+	width: 570px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 53px;
 }
 
 .form-title {
@@ -313,7 +313,7 @@ h2 {
 	font-weight: bold;
 	text-align: center;
 	margin: 0;
-	margin-bottom: 36px;
+	margin-bottom: 25px;
 }
 
 .search-info {
@@ -321,14 +321,15 @@ h2 {
 	line-height: 24px;
 	text-align: center;
 	margin: 0;
-	margin-bottom: 50px;
+	margin-bottom: 15px;
 }
 
 .search-link {
 	display: block;
 	box-sizing: border-box;
-	width: 576px;
+	width: 570px;
 	padding: 30px 55px;
+	margin-top: 45px;
 	font-size: 21px;
 	line-height: 26px;
 	font-weight: bold;
@@ -512,7 +513,7 @@ transform: translateY(-100px);
 }
 
 .map-image {
-	height: 595px;
+	height: 565px;
 	background-image: url("../img/map.jpg");
 }
 
@@ -527,7 +528,7 @@ transform: translateY(-100px);
 	z-index: 2;
 	bottom: 0;
 	left: 0;
-	margin: 0 auto;
+	margin: -30px auto;
 	width: 1200px;
 	color: #000000;
 	background-color: rgba(255, 255, 255, 0.9);
@@ -545,8 +546,8 @@ transform: translateY(-100px);
 	align-items: center;
 	padding-left: 132px;
 	padding-right: 100px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 25px;
+	padding-bottom: 23px;
 
 }
 
@@ -560,27 +561,28 @@ transform: translateY(-100px);
 }
 
 .footer-social {
-	width: 400px;
-	margin-right: 88px;
+	width: 380px;
+	margin-right: 110px;
 	text-align: center;
 }	
 
 .footer-copyright {
 	display: flex;
 	justify-content: space-between;
-	width: 240px;
+	width: 197px;
 }
 
 .footer-copyright p {
-	margin-top: 14px;
+	margin-top: 10px;
 	font-size: 14px;
 	line-height: 26px;
 }
 
 .footer-copyright a {
 	display: block;
-	width: 160px;
-	height: 36px;
+	width: 115px;
+	height: 10px;
+	margin: 4px;
 }
 
 .footer-social ul {
@@ -591,7 +593,7 @@ transform: translateY(-100px);
 }
 
 .socials-item:nth-last-child(n+1) {
-	margin-right: 8px;
+	margin-right: 6px;
 }
 
 .socials-button {
