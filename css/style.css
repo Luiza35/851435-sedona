@@ -197,11 +197,11 @@ input[type="radio"].visually-hidden {
 .reason-item p {
 	padding-left: 60px;
 	padding-right: 60px;
-	padding-bottom: 45px;
+	padding-bottom: 60px;
 }
 
 .reason-item-gift p {
-	padding-bottom: 87px;
+	padding-bottom: 83px;
 }
 
 .reason-item span {
@@ -265,7 +265,7 @@ input[type="radio"].visually-hidden {
 .reason-item-gift h3 {
 	padding-top: 155px;
 	margin-bottom: 23px;
-	margin-top: 5px;
+	margin-top: 6px;
 }
 
 .reason-item-gift:nth-child(2) h3 {
@@ -275,7 +275,7 @@ input[type="radio"].visually-hidden {
 .reason-item-gift:nth-child(2) h3::before {
 	position: absolute;
 	content: "";
-	top: 50px;
+	top: 55px;
 	left: 39px;
 
 	background-image: url("../img/icon-1.svg");
@@ -290,7 +290,7 @@ input[type="radio"].visually-hidden {
 .reason-item-gift:nth-child(3) h3::before {
 	position: absolute;
 	content: "";
-	top: 50px;
+	top: 55px;
 	left: 40px;
 
 	background-image: url("../img/icon-3.svg");
@@ -305,7 +305,7 @@ input[type="radio"].visually-hidden {
 .reason-item-gift:nth-child(4) h3::before {
 	position: absolute;
 	content: "";
-	top: 50px;
+	top: 55px;
 	left: 45px;
 
 	background-image: url("../img/icon-2.svg");
@@ -352,7 +352,7 @@ input[type="radio"].visually-hidden {
 
 	width: 576px;
 	margin: 0 auto;
-	margin-top: 60px;
+	margin-top: 50px;
 }
 
 .form-title {
@@ -369,7 +369,7 @@ input[type="radio"].visually-hidden {
 
 .search-info {
 	margin: 0;
-	margin-bottom: 57px;
+	margin-bottom: 48px;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -381,8 +381,8 @@ input[type="radio"].visually-hidden {
 .search-link {
 	display: block;
 	box-sizing: border-box;
-	width: 571px;
-	padding: 30px 55px;
+	width: 570px;
+	padding: 30px 50px;
 
 	font-size: 21px;
 	line-height: 26px;
@@ -583,7 +583,7 @@ transform: translateY(-100px);
 }
 
 .map-image {
-	height: 595px;
+	min-height: 590px;
 	background-image: url("../img/map.jpg");
 }
 
@@ -621,7 +621,7 @@ transform: translateY(-100px);
 	padding-left: 132px;
 	padding-right: 100px;
 	padding-top: 22px;
-	padding-bottom: 25px;
+	padding-bottom: 22px;
 
 	align-items: center;
 }
