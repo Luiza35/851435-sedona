@@ -140,7 +140,7 @@ input[type="radio"].visually-hidden {
 
 	display: block;
 	width: 1200px;
-	height: 58px;
+	height: 59px;
 
 	background-image: url("../img/polygon-second.png");
 	background-repeat: no-repeat;
@@ -638,7 +638,7 @@ transform: translateY(-100px);
 
 .footer-social {
 	width: 400px;
-	margin-right: 105px;
+	margin-right: 110px;
 
 	text-align: center;
 }	
@@ -651,6 +651,7 @@ transform: translateY(-100px);
 
 .footer-copyright p {
 	margin-top: 14px;
+
 
 	font-size: 14px;
 	line-height: 26px;
@@ -728,8 +729,8 @@ transform: translateY(-100px);
 .filters-container {
 	padding-left: 73px;
 	padding-right: 73px;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-top: 27px;
+	padding-bottom: 13px;
 }
 
 .filter {
@@ -745,7 +746,7 @@ transform: translateY(-100px);
 
 .filter legend {
 	margin-right: 110px;
-	margin-bottom: 23px;
+	margin-bottom: 20px;
 }
 
 .filter ul {
@@ -761,11 +762,11 @@ transform: translateY(-100px);
 }
 
 .filter-option {
-	margin-bottom: 23px;
+	margin-bottom: 24px;
 	margin-left: 40px;
 }
 
-.filter legend, h3 {
+.filter legend {
 	font-size: 16px;
 	line-height: 21px;
 	font-weight: bold;
@@ -790,7 +791,7 @@ transform: translateY(-100px);
 .filter-input-checkbox + label::after {
   position: absolute;
   content: "";
-  left: -38px;
+  left: -39px;
   width: 26px;
   height: 23px;
 
@@ -820,7 +821,7 @@ transform: translateY(-100px);
 }
 
 .filter-control {
-	width: 330px;
+	width: 318px;
 	margin-left: auto;
 	color: #ffffff;
 }
@@ -882,7 +883,7 @@ transform: translateY(-100px);
 .range-controls {
   position: relative;
 
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 }
 
 .range-controls .scale {
@@ -900,7 +901,7 @@ transform: translateY(-100px);
 
 .range-toggle {
   position: absolute;
-  top: -9px;
+  top: -10px;
   width: 4px;
   height: 4px;
 
@@ -925,7 +926,9 @@ transform: translateY(-100px);
 
 .filter-button {
 	display: block;
+	width: 136px;
 	margin: 0 auto;
+	margin-right: 95px;
 	padding: 6px 35px;
 
 	font-size: 14px;
@@ -933,6 +936,7 @@ transform: translateY(-100px);
 	color: #ffffff;
 	background-color: transparent;
 	border: 2px solid #ffffff; 
+	text-transform: uppercase;
 	border-radius: 2px;
 	cursor: pointer;
 }
@@ -1077,7 +1081,7 @@ transform: translateY(-100px);
 
 .catalog-item {
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 28px;
 	padding-left: 73px;
 	padding-right: 73px;
 	border-bottom: 1px solid #e5e5e5;
@@ -1175,20 +1179,17 @@ catalog .button-detail:active {
 
 .rating-stars {
 	margin: 0;
-	margin-bottom: 47px;
+	margin-bottom: 40px;
 }
 
-.rating-star {
-  padding: 0;
-
-  background: none;
-  border: none;
-  
-  cursor: pointer;
-} 
+.rating-stars img {
+	margin-left: 2px;
+}
+ 
 
 .rating-numbers {
 	margin: 0;
+	padding: 3px 12px;
 	background-color: #f2f2f2;
 }
 
