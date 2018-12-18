@@ -127,7 +127,7 @@ input[type="radio"].visually-hidden {
 	
 	padding-bottom: 70px;
 	
-	background-image: url("../img/background-photo.jpg");
+	background-image: url("../img/background-second.jpg");
 	background-repeat: no-repeat;
 	background-origin: #81b4d3;
 }
@@ -720,7 +720,7 @@ transform: translateY(-100px);
 .filters {
 	color: #ffffff;
     background-color: #81b3d3;
-	background-image: url("../img/filter-background.jpg");
+	background-image: url("../img/background-inner.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
@@ -975,8 +975,17 @@ transform: translateY(-100px);
 	display: flex;
 	width: 890px;
 	margin-left: 47px;
+	margin-top: 4px;
 	
 	align-items: center;
+}
+
+.found-section p {
+	margin: 0;
+}
+
+.found-list {
+	margin: 0;
 }
 
 
@@ -992,8 +1001,8 @@ transform: translateY(-100px);
 }
 
 .found-list a {
-	text-decoration: underline;
 	color: #cacaca;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .found-item-current {
