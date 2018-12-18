@@ -125,7 +125,7 @@ input[type="radio"].visually-hidden {
 	display: flex;
 	justify-content: center;
 	
-	padding-bottom: 70px;
+	padding-bottom: 69px;
 	
 	background-image: url("../img/background-second.jpg");
 	background-repeat: no-repeat;
@@ -136,7 +136,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	content: "";
 	left: 0;
-	bottom: -1px;
+	bottom: -2px;
 
 	display: block;
 	width: 1200px;
@@ -354,7 +354,7 @@ input[type="radio"].visually-hidden {
 
 	width: 576px;
 	margin: 0 auto;
-	margin-top: 50px;
+	margin-top: 46px;
 }
 
 .form-title {
@@ -371,7 +371,7 @@ input[type="radio"].visually-hidden {
 
 .search-info {
 	margin: 0;
-	margin-bottom: 48px;
+	margin-bottom: 46px;
 
 	font-size: 14px;
 	line-height: 24px;
@@ -383,7 +383,7 @@ input[type="radio"].visually-hidden {
 .search-link {
 	display: block;
 	box-sizing: border-box;
-	width: 570px;
+	width: 573px;
 	padding: 30px 50px;
 
 	font-size: 21px;
@@ -408,7 +408,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-search {
-	display: none;
+	display: ;
 }
 
 .form-search-show {
@@ -421,7 +421,7 @@ input[type="radio"].visually-hidden {
 	position: absolute;
 	z-index: 3;
 
-	width: 576px;
+	width: 573px;
 	padding-top: 55px;
 	padding-bottom: 55px;
 	
@@ -510,11 +510,12 @@ transform: translateY(-100px);
 	justify-content: space-between;
 	width: 458px;
 	margin: 0 auto;
-	margin-bottom: 54px;
+	margin-bottom: 55px;
 }
 
 .quantity-item {
 	display: flex;
+	margin: 0;
 
 	font-size: 14px;
 	line-height: 26px;
@@ -585,7 +586,6 @@ transform: translateY(-100px);
 }
 
 .map-image {
-	min-height: 590px;
 	background-image: url("../img/map.jpg");
 }
 
