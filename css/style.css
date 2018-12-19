@@ -857,7 +857,8 @@ transform: translateY(-100px);
 .filter-input-checkbox + label::after {
   position: absolute;
   content: "";
-  left: -39px;
+  left: -40px;
+  bottom: -1px;
   width: 26px;
   height: 23px;
 
@@ -869,7 +870,8 @@ transform: translateY(-100px);
 .filter-input-checkbox:checked + label::after {
   position: absolute;
   content: "";
-  left: -38px;
+  left: -39px;
+  bottom: -1px;
   width: 26px;
   height: 23px;
 
