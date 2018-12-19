@@ -147,7 +147,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sedona-content {
-	margin-top: 60px;
+	margin-top: 59px;
 	width: 1200px;
 }
 
@@ -203,6 +203,7 @@ input[type="radio"].visually-hidden {
 }
 
 .reason-item-gift p {
+	width: 300px;
 	padding-bottom: 83px;
 }
 
@@ -354,7 +355,7 @@ input[type="radio"].visually-hidden {
 
 	width: 576px;
 	margin: 0 auto;
-	margin-top: 46px;
+	margin-top: 48px;
 }
 
 .form-title {
@@ -384,7 +385,10 @@ input[type="radio"].visually-hidden {
 	display: block;
 	box-sizing: border-box;
 	width: 573px;
-	padding: 30px 50px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-right: 50px;
+	padding-left: 40px;
 
 	font-size: 21px;
 	line-height: 26px;
@@ -545,18 +549,77 @@ transform: translateY(-100px);
 	height: 38px;
 	font: inherit;
 	
-	color: #a9a9a9;
+	
 	background-color: #f2f2f2;
 	cursor: pointer;
 	border: none;
 }
 
-.quantity-item button:hover {
-	color: #000000;
+.minus {
+	position: relative;
+	
 }
 
-.quantity-item button:active {
-	color: #81b3d2;
+.minus::before {
+	position: absolute;
+	content: "";
+	margin-left: -5px;
+
+	width: 10px;
+	height: 3px;
+
+	background-color: #a9a9a9;
+}
+
+.minus:hover::before {
+	background-color: #000000;
+}
+
+.minus:active::before {
+	background-color: #81b3d2;
+}
+
+.plus {
+	position: relative;
+}
+
+.plus::before {
+	position: absolute;
+	content: "";
+	margin-left: -5px;
+
+	width: 10px;
+	height: 3px;
+
+	background-color: #a9a9a9;
+}
+
+.plus::after {
+	position: absolute;
+	content: "";
+	margin-left: -5px;
+
+	width: 10px;
+	height: 3px;
+
+	background-color: #a9a9a9;
+	transform: rotate(90deg);
+}
+
+.plus:hover::before {
+	background-color: #000000;
+}
+
+.plus:active::before {
+	background-color: #81b3d2;
+}
+
+.plus:hover::after {
+	background-color: #000000;
+}
+
+.plus:active::after {
+	background-color: #81b3d2;
 }
 
 .search-button {
@@ -622,8 +685,8 @@ transform: translateY(-100px);
 	justify-content: space-between;
 	padding-left: 132px;
 	padding-right: 100px;
-	padding-top: 22px;
-	padding-bottom: 22px;
+	padding-top: 23px;
+	padding-bottom: 23px;
 
 	align-items: center;
 }
