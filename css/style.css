@@ -479,7 +479,9 @@ transform: translateY(-100px);
 }
 
 ::placeholder {
+	color: #000000;
 	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .icon-calendar {
