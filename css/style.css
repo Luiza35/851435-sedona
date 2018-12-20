@@ -58,6 +58,7 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	margin: 0;
 	padding-top: 14px;
@@ -123,6 +124,7 @@ input[type="radio"].visually-hidden {
 .container-welcome {
 	position: relative;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	
 	padding-bottom: 73px;
@@ -153,10 +155,11 @@ input[type="radio"].visually-hidden {
 
 .welcome-text  {
 	display: flex;
-    justify-content: center;
-    width: 576px;
-    box-sizing: border-box;
-    margin: 0 auto;
+	flex-wrap: wrap;
+  justify-content: center;
+  width: 576px;
+  box-sizing: border-box;
+  margin: 0 auto;
  
 	margin-bottom: 27px;
 	
@@ -442,6 +445,7 @@ transform: translateY(-100px);
 	position: relative;
 
 	display: flex;
+	flex-wrap: wrap;
 	width: 458px;
 	margin: 0 auto;
 	
@@ -513,6 +517,7 @@ transform: translateY(-100px);
 
 .quantity-items {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 458px;
 	margin: 0 auto;
@@ -521,6 +526,7 @@ transform: translateY(-100px);
 
 .quantity-item {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 
 	font-size: 14px;
@@ -684,6 +690,7 @@ transform: translateY(-100px);
 
 .footer-container {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	padding-left: 132px;
 	padding-right: 100px;
@@ -703,15 +710,10 @@ transform: translateY(-100px);
 	color: #000000;
 }
 
-.footer-social {
-	width: 400px;
-	margin-right: 110px;
-
-	text-align: center;
-}	
-
+	
 .footer-copyright {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	width: 195px;
 }
@@ -730,10 +732,14 @@ transform: translateY(-100px);
 	margin-top: 7px;
 }
 
-.footer-social ul {
+.socials {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	width: 200px;
+	margin-right: 110px;
+
+	text-align: center;
 
 	list-style: none;
 }
@@ -785,7 +791,7 @@ transform: translateY(-100px);
 /* Стилизация внутренней страницы */
 .filters {
 	color: #ffffff;
-    background-color: #81b3d3;
+  background-color: #81b3d3;
 	background-image: url("../img/background-inner.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -801,6 +807,7 @@ transform: translateY(-100px);
 
 .filter {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .filter fieldset {
@@ -818,7 +825,6 @@ transform: translateY(-100px);
 .filter ul {
 	padding: 0;
   margin: 0;
-
 }
 
 .filter-list {
@@ -892,6 +898,7 @@ transform: translateY(-100px);
 .filter-control {
 	width: 318px;
 	margin-left: auto;
+
 	color: #ffffff;
 }
 
@@ -1004,10 +1011,12 @@ transform: translateY(-100px);
 	font-size: 14px;
 	line-height: 20px;
 	color: #ffffff;
+
 	background-color: transparent;
 	border: 2px solid #ffffff; 
 	text-transform: uppercase;
 	border-radius: 2px;
+
 	cursor: pointer;
 }
 
@@ -1019,6 +1028,7 @@ transform: translateY(-100px);
 
 .header-container {
 	display: flex;
+	flex-wrap: wrap;
 	padding-left: 73px;
 	padding-right: 73px;
 	
@@ -1043,6 +1053,7 @@ transform: translateY(-100px);
 
 .found-section {
 	display: flex;
+	flex-wrap: wrap;
 	width: 890px;
 	margin-left: 47px;
 	margin-top: 4px;
@@ -1057,7 +1068,6 @@ transform: translateY(-100px);
 .found-list {
 	margin: 0;
 }
-
 
 .found-list {
 	display: flex;
@@ -1090,6 +1100,7 @@ transform: translateY(-100px);
 
 .icon-buttons-list {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	margin-left: auto;
 
@@ -1160,10 +1171,12 @@ transform: translateY(-100px);
 
 .catalog-item {
 	display: flex;
+	flex-wrap: wrap;
 	padding-top: 30px;
 	padding-bottom: 29px;
 	padding-left: 73px;
 	padding-right: 73px;
+
 	border-bottom: 1px solid #e5e5e5;
 }
 
@@ -1190,9 +1203,9 @@ transform: translateY(-100px);
 }
 
 .catalog-price {
+	width: 142px;
 	margin: 0;
 	margin-left: 6px;
-	width: 142px;
 
 	cursor: pointer;
 }
@@ -1230,11 +1243,11 @@ catalog .button-detail:active {
 	padding: 3px 16px;
 	margin-left: 6px;
 	margin-top: 15px;
-	color: #ffffff;
 	
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
+	color: #ffffff;
 
 	background-color: #766357;
 }
@@ -1270,6 +1283,7 @@ catalog .button-detail:active {
 .rating-numbers {
 	margin: 0;
 	padding: 3px 12px;
+
 	background-color: #f2f2f2;
 }
 
