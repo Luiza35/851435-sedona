@@ -795,8 +795,8 @@ transform: translateY(-100px);
 .filters-container {
 	padding-left: 73px;
 	padding-right: 73px;
-	padding-top: 27px;
-	padding-bottom: 13px;
+	padding-top: 28px;
+	padding-bottom: 9px;
 }
 
 .filter {
@@ -805,19 +805,20 @@ transform: translateY(-100px);
 
 .filter fieldset {
 	padding: 0;
-    margin: 0;
+  margin: 0;
 
-    border: none;
+  border: none;
 }
 
 .filter legend {
 	margin-right: 110px;
-	margin-bottom: 20px;
+	margin-bottom: 23px;
 }
 
 .filter ul {
 	padding: 0;
-    margin: 0;
+  margin: 0;
+
 }
 
 .filter-list {
@@ -859,7 +860,7 @@ transform: translateY(-100px);
   content: "";
   left: -40px;
   bottom: -1px;
-  width: 26px;
+  width: 25px;
   height: 23px;
 
   background-image: url("../img/checkbox-off.svg");
@@ -872,7 +873,7 @@ transform: translateY(-100px);
   content: "";
   left: -39px;
   bottom: -1px;
-  width: 26px;
+  width: 25px;
   height: 23px;
 
   background-image: url("../img/checkbox-on.svg");
@@ -905,7 +906,7 @@ transform: translateY(-100px);
 
 .price-controls {
 	position: relative;
-	height: 36px;
+	height: 32px;
 	margin-bottom: 20px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
@@ -935,6 +936,7 @@ transform: translateY(-100px);
 .price-controls .max-price {
   width: 90px;
   padding-left: 65px;
+
 }
 
 .price-controls input {
@@ -951,7 +953,7 @@ transform: translateY(-100px);
 .range-controls {
   position: relative;
 
-  margin-bottom: 29px;
+  margin-bottom: 32px;
 }
 
 .range-controls .scale {
@@ -981,7 +983,7 @@ transform: translateY(-100px);
 }
 
 .range-toggle:hover {
-  background: #ababab;
+  background: #1c4f80;
 }
 
 .range-toggle-min {
@@ -997,7 +999,7 @@ transform: translateY(-100px);
 	width: 136px;
 	margin: 0 auto;
 	margin-right: 95px;
-	padding: 6px 35px;
+	padding: 6px 30px;
 
 	font-size: 14px;
 	line-height: 20px;
@@ -1157,19 +1159,15 @@ transform: translateY(-100px);
 }
 
 .catalog-item {
+	display: flex;
 	padding-top: 30px;
-	padding-bottom: 28px;
+	padding-bottom: 29px;
 	padding-left: 73px;
 	padding-right: 73px;
 	border-bottom: 1px solid #e5e5e5;
 }
 
-.item {
-	display: flex;
-}
-
 .catalog-item-image {
-	order: -1;
 	margin: 0;
 	height: 90px;
 }
@@ -1177,8 +1175,13 @@ transform: translateY(-100px);
 .catalog-item-info {
 	display: flex;
 	flex-wrap: wrap;
+
 	width: 258px;
 	padding-left: 30px;
+}
+
+.catalog-item-info h3 {
+	margin-bottom: 2px;
 }
 
 .catalog-category {
@@ -1199,7 +1202,7 @@ transform: translateY(-100px);
 	box-sizing: border-box;
 	width: 110px;
 	padding: 3px 16px;
-	margin-top: 18px;
+	margin-top: 15px;
 	color: #ffffff;
 	
 	font-size: 14px;
@@ -1226,7 +1229,7 @@ catalog .button-detail:active {
 	width: 142px;
 	padding: 3px 16px;
 	margin-left: 6px;
-	margin-top: 18px;
+	margin-top: 15px;
 	color: #ffffff;
 	
 	font-size: 14px;
