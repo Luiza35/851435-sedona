@@ -882,13 +882,14 @@ input[type="radio"].visually-hidden {
 }
 
 /* Стилизация внутренней страницы */
-.filters {
+
+.filters-container {
 	padding-left: 73px;
 	padding-right: 73px;
 	padding-top: 28px;
 	padding-bottom: 9px;
-
 	color: #ffffff;
+
   background-color: #81b3d3;
 	background-image: url("../img/background-inner.jpg");
 	background-repeat: no-repeat;
@@ -914,6 +915,8 @@ input[type="radio"].visually-hidden {
 .filter legend {
 	margin-right: 110px;
 	margin-bottom: 23px;
+
+	color: #ffffff;
 }
 
 .filter ul {
