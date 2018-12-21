@@ -521,25 +521,22 @@ input[type="radio"].visually-hidden {
 	border: 1px solid #e5e5e5;
 }
 
-::-webkit-input-placeholder {
+.search-item input::-webkit-input-placeholder {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
-:-ms-input-placeholder {
+.search-item input:-ms-input-placeholder {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
-::-ms-input-placeholder {
+.search-item input::-ms-input-placeholder {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
 }
-
-::placeholder {
+.search-item input::placeholder {
 	color: #000000;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -615,6 +612,27 @@ input[type="radio"].visually-hidden {
 	background-color: #f2f2f2;
 	text-align: center;
 	border: none;
+}
+
+.quantity-item input::-webkit-input-placeholder {
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.quantity-item input:-ms-input-placeholder {
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.quantity-item input::-ms-input-placeholder {
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.quantity-item input::placeholder {
+	color: #000000;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .quantity-item button {
@@ -1054,6 +1072,20 @@ input[type="radio"].visually-hidden {
 
   background: none;
   border: none;
+  line-height: 21px;
+}
+
+.price-controls input::-webkit-input-placeholder {
+	color: #ffffff;
+}
+.price-controls input:-ms-input-placeholder {
+	color: #ffffff;
+}
+.price-controls input::-ms-input-placeholder {
+	color: #ffffff;
+}
+.price-controls input::placeholder {
+	color: #ffffff;
 }
 
 .range-controls {
