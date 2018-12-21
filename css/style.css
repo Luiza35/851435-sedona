@@ -483,8 +483,7 @@ input[type="radio"].visually-hidden {
 	display: -ms-flexbox;
 
 	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
+	justify-content: space-between;
 	width: 458px;
 	margin: 0 auto;
 	
@@ -495,7 +494,7 @@ input[type="radio"].visually-hidden {
 
 .search-item label {
 	margin-top: 6px;
-	padding-right: 20px;
+	padding-right: 10px;
 }
 
 .search-item input {
@@ -602,7 +601,7 @@ input[type="radio"].visually-hidden {
 
 .quantity-item label {
 	margin-top: 6px;
-	margin-right: 40px;
+	margin-right: 38px;
 }
 
 .quantity-item:nth-child(2) label {
@@ -637,9 +636,10 @@ input[type="radio"].visually-hidden {
 .minus::before {
 	position: absolute;
 	content: "";
-	margin-left: -5px;
+	top: 17px;
+	left: 15px;
 
-	width: 10px;
+	width: 11px;
 	height: 3px;
 
 	background-color: #a9a9a9;
@@ -660,9 +660,10 @@ input[type="radio"].visually-hidden {
 .plus::before {
 	position: absolute;
 	content: "";
-	margin-left: -5px;
+	top: 17px;
+	left: 14px;
 
-	width: 10px;
+	width: 11px;
 	height: 3px;
 
 	background-color: #a9a9a9;
@@ -671,9 +672,10 @@ input[type="radio"].visually-hidden {
 .plus::after {
 	position: absolute;
 	content: "";
-	margin-left: -5px;
+	top: 17px;
+	left: 14px;
 
-	width: 10px;
+	width: 11px;
 	height: 3px;
 
 	background-color: #a9a9a9;
@@ -767,8 +769,8 @@ input[type="radio"].visually-hidden {
 	        justify-content: space-between;
 	padding-left: 132px;
 	padding-right: 100px;
-	padding-top: 23px;
-	padding-bottom: 23px;
+	padding-top: 33px;
+	padding-bottom: 35px;
 
 	-webkit-box-align: center;
 
@@ -810,7 +812,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright a {
 	display: block;
 	width: 116px;
-	height: 10px;
+	height: px;
 	margin-top: 7px;
 }
 
@@ -824,8 +826,9 @@ input[type="radio"].visually-hidden {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	width: 200px;
-	margin-right: 110px;
-
+	margin: 0;
+	margin-right: 78px;
+	padding: 0;
 	text-align: center;
 
 	list-style: none;
@@ -833,6 +836,10 @@ input[type="radio"].visually-hidden {
 
 .socials-item:nth-last-child(n+1) {
 	margin-right: 6px;
+}
+
+.socials-item:nth-child(n+4) {
+	margin-top: 6px;
 }
 
 .socials-button {
