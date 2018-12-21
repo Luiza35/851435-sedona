@@ -803,8 +803,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright p {
-	margin-top: 14px;
-		
+	
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -812,7 +811,7 @@ input[type="radio"].visually-hidden {
 .footer-copyright a {
 	display: block;
 	width: 116px;
-	
+	height: 36px;
 	margin-top: 7px;
 }
 
@@ -884,19 +883,17 @@ input[type="radio"].visually-hidden {
 
 /* Стилизация внутренней страницы */
 .filters {
+	padding-left: 73px;
+	padding-right: 73px;
+	padding-top: 28px;
+	padding-bottom: 9px;
+
 	color: #ffffff;
   background-color: #81b3d3;
 	background-image: url("../img/background-inner.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 0;
-}
-
-.filters-container {
-	padding-left: 73px;
-	padding-right: 73px;
-	padding-top: 28px;
-	padding-bottom: 9px;
 }
 
 .filter {
