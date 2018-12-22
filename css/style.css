@@ -59,40 +59,39 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	margin: 0;
-	padding-top: 14px;
-	padding-bottom: 16px;
-	padding-left: 71.5px;
-	padding-right: 71.5px;
-
-	list-style: none;
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-ms-flex-wrap: wrap;
+flex-wrap: wrap;
+margin: 0;
+padding: 0;
+padding-top: 14px;
+padding-bottom: 16px;
+padding-right: 71.5px;
+padding-left: 71.5px;
+list-style: none;
 }
 
 .site-navigation li {
 	width: 200px;
 }
 
-.site-navigation li:nth-child(2) {
-	margin-right: 68px;
+.site-navigation li:nth-child(4n+2) {
+margin-right: 68px;
+margin-left: 42px;
 }
 
-.site-navigation li:nth-child(3) {
-	margin-left: 60px;
-	text-align: right;
+.site-navigation li:nth-child(4n+3) {
+margin-left: 105px;
+margin-right: 42px;
+text-align: right;
 
-	letter-spacing: 0.2px;
+letter-spacing: 0.2px;
 }
 
-.site-navigation li:last-child {
-	text-align: right;
+.site-navigation li:nth-child(4n+4) {
+text-align: right;
 }
 
 .main-header-logo {
@@ -817,11 +816,11 @@ input[type="radio"].visually-hidden {
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
-	width: 195px;
+	width: 197px;
 }
 
 .footer-copyright p {
-	
+	margin-right: 5px;
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -844,7 +843,7 @@ input[type="radio"].visually-hidden {
 	        justify-content: center;
 	width: 200px;
 	margin: 0;
-	margin-right: 78px;
+	margin-right: 72px;
 	padding: 0;
 	text-align: center;
 
@@ -899,12 +898,16 @@ input[type="radio"].visually-hidden {
 	fill: #bdbbbc;
 }
 
+.button-copyright svg:active {
+	fill: #bdbbbc;
+}
+
 /* Стилизация внутренней страницы */
 
 .filters-container {
 	padding-left: 73px;
 	padding-right: 73px;
-	padding-top: 28px;
+	padding-top: 29px;
 	padding-bottom: 9px;
 	color: #ffffff;
 
@@ -931,7 +934,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-	margin-right: 110px;
+	margin-right: 115px;
 	margin-bottom: 23px;
 
 	color: #ffffff;
