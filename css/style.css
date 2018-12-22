@@ -482,7 +482,9 @@ text-align: right;
 	display: -ms-flexbox;
 
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
 	width: 458px;
 	margin: 0 auto;
 	
