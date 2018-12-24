@@ -219,6 +219,13 @@ input[type="radio"].visually-hidden {
 	
 }
 
+.reason-item {
+	margin: 0;
+	padding: 0;
+
+	text-align: center;
+}
+
 .reason-item p {
 	padding-left: 60px;
 	padding-right: 60px;
@@ -340,12 +347,6 @@ input[type="radio"].visually-hidden {
 	height: 76px;
 }
 
-.reason-item {
-	margin: 0;
-	padding: 0;
-
-	text-align: center;
-}
 
 .reason-item:nth-child(n+6) {
 	background-color: #eeeeee;
@@ -1026,7 +1027,7 @@ input[type="radio"].visually-hidden {
 
 .filter-range-title {
 	margin-top: 0;
-	margin-bottom: 9px;
+	margin-bottom: 7px;
 
 	font-weight: 600;
 	font-size: 16px;
@@ -1093,6 +1094,7 @@ input[type="radio"].visually-hidden {
 }
 .price-controls input::placeholder {
 	color: #ffffff;
+	opacity: 1;
 }
 
 .range-controls {
