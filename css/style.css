@@ -228,6 +228,7 @@ input[type="radio"].visually-hidden {
 .reason-item-gift p {
 	width: 300px;
 	padding-bottom: 83px;
+
 }
 
 .reason-item span {
@@ -747,6 +748,7 @@ input[type="radio"].visually-hidden {
 
 .map-image {
 	background-image: url("../img/map.jpg");
+	background-color: #81b3d2;
 }
 
 .map-image iframe {
@@ -1128,6 +1130,7 @@ input[type="radio"].visually-hidden {
 
 .range-toggle:hover {
 	background: #1c4f80;
+	transform: scale(1.1)
 }
 
 .range-toggle-min {
