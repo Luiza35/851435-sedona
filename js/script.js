@@ -6,10 +6,11 @@ var quantityadults = popup.querySelector("[name=quantity-adults]");
 var quantitychildren = popup.querySelector("[name=quantity-children]");
 
 popup.classList.remove("form-search-show");
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.toggle("form-search-show");
+
+link.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	popup.classList.toggle("form-search-show");
+	
 });
 
 
