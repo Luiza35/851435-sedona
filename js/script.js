@@ -10,7 +10,11 @@ popup.classList.remove("form-search-show");
 link.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	popup.classList.toggle("form-search-show");
-	
 });
 
-
+popup.addEventListener("submit", function (evt) {
+	if (!datearrival.value || !datedeparture.value || !quantityadults.value || !quantitychildren.value) {
+	evt.preventDefault();
+	popup.classList.add("form-search-show-error");
+	}
+});
