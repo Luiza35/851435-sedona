@@ -15,6 +15,8 @@ link.addEventListener("click", function (evt) {
 popup.addEventListener("submit", function (evt) {
 	if (!datearrival.value || !datedeparture.value || !quantityadults.value || !quantitychildren.value) {
 	evt.preventDefault();
+	popup.classList.remove("form-search-show-error"); 
+	popup.offsetWidth = popup.offsetWidth;
 	popup.classList.add("form-search-show-error");
 	}
 });
