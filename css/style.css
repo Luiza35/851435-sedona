@@ -250,7 +250,7 @@ input[type="radio"].visually-hidden {
 
 .reason-item p {
 	margin: 0;
-	
+
 }
 
 .reason-item p {
@@ -444,7 +444,7 @@ input[type="radio"].visually-hidden {
 }
 
 .form-search {
-	display: ;
+	display: none;
 }
 
 .form-search-show {
