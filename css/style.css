@@ -392,17 +392,10 @@ input[type="radio"].visually-hidden {
 	background-color: #eeeeee;
 }
 
-.search-form {
-	position: relative;
-
-	width: 576px;
-	margin: 0 auto;
-	margin-top: 48px;
-}
-
 .form-title {
 	margin: 0;
 	margin-bottom: 25px;
+	margin-top: 48px;
 
 	font-size: 30px;
 	line-height: 36px;
@@ -420,6 +413,12 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 
 	text-align: center;
+}
+
+.search-form {
+	position: relative;
+	width: 576px;
+	margin: 0 auto;
 }
 
 .search-link {
