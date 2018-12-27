@@ -259,6 +259,18 @@ input[type="radio"].visually-hidden {
 	padding-bottom: 60px;
 }
 
+.reason-item:nth-child(5) p {
+	width: 320px;
+	padding: 0;
+	margin-left: 40px;
+}
+
+.reason-item:last-child p {
+	width: 259px;
+	padding: 0;
+	margin-left: 71px;
+}
+
 .reason-item-gift p {
 	width: 300px;
 	margin-left: -10px;
@@ -408,7 +420,6 @@ input[type="radio"].visually-hidden {
 	line-height: 24px;
 
 	text-align: center;
-	
 }
 
 .search-link {
@@ -961,10 +972,10 @@ input[type="radio"].visually-hidden {
 /* Стилизация внутренней страницы */
 
 .filters-container {
-	padding-left: 73px;
+	padding-left: 72px;
 	padding-right: 73px;
-	padding-top: 29px;
-	padding-bottom: 9px;
+	padding-top: 28px;
+	padding-bottom: 6px;
 	color: #ffffff;
 
 	background-color: #81b3d3;
@@ -990,8 +1001,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filter legend {
-	margin-right: 115px;
-	margin-bottom: 23px;
+	margin-right: 118px;
+	margin-bottom: 24px;
+
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
 
 	color: #ffffff;
 }
@@ -1009,14 +1024,8 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-option {
-	margin-bottom: 24px;
+	margin-bottom: 25px;
 	margin-left: 40px;
-}
-
-.filter legend {
-	font-size: 16px;
-	line-height: 21px;
-	font-weight: bold;
 }
 
 .filter-option label {
@@ -1078,8 +1087,9 @@ input[type="radio"].visually-hidden {
 
 .filter-range-title {
 	width: 200px;
-	margin-top: 0;
-	margin-bottom: 7px;
+	margin-top: -2px;
+	margin-bottom: 10px;
+	margin-left: 3px;
 
 	font-weight: 600;
 	font-size: 16px;
@@ -1089,7 +1099,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
 	position: relative;
 	height: 32px;
-	margin-bottom: 20px;
+	margin-bottom: 21px;
 	border: 2px solid #ffffff;
 	border-radius: 2px;
 	font-size: 0;
@@ -1098,8 +1108,8 @@ input[type="radio"].visually-hidden {
 .price-controls::after {
 	position: absolute;
 	content: "";
-	top: 50%;
-	left: 50%;
+	top: 17px;
+	left: 160px;
 	width: 2px;
 	height: 22px;
 	-webkit-transform: translate(-50%, -50%);
@@ -1118,14 +1128,14 @@ input[type="radio"].visually-hidden {
 
 .price-controls .min-price,
 .price-controls .max-price {
-	width: 90px;
+	width: 83px;
 	padding-left: 65px;
 }
 
 .price-controls input {
 	width: 50px;
 	margin: 0;
-
+	
 	color: inherit;
 	font: inherit;
 
@@ -1152,6 +1162,7 @@ input[type="radio"].visually-hidden {
 	position: relative;
 
 	margin-bottom: 32px;
+	margin-left: 2px;
 }
 
 .range-controls .scale {
@@ -1283,7 +1294,7 @@ input[type="radio"].visually-hidden {
 }
 
 .found-list li:nth-child(n+1) {
-	margin-right: 34px;
+	margin-right: 32px;
 }
 
 .found-list a {
