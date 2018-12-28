@@ -407,7 +407,7 @@ input[type="radio"].visually-hidden {
 .search-info {
 	margin: 0;
 	margin-bottom: 46px;
-
+	
 	font-size: 14px;
 	line-height: 24px;
 
@@ -540,7 +540,6 @@ input[type="radio"].visually-hidden {
 	width: 100px;
 	padding-left: 2px;
 	margin-top: 6px;
-	
 }
 
 .search-item input {
@@ -820,8 +819,8 @@ input[type="radio"].visually-hidden {
 	margin: 0 auto;
 	padding-left: 132px;
 	padding-right: 100px;
-	padding-top: 34px;
-	padding-bottom: 41px;
+	padding-top: 35px;
+	padding-bottom: 40px;
 
 	-webkit-box-align: center;
 
@@ -844,8 +843,8 @@ input[type="radio"].visually-hidden {
 	justify-content: space-between;
 	padding-left: 132px;
 	padding-right: 100px;
-	padding-top: 34px;
-	padding-bottom: 41px;
+	padding-top: 35px;
+	padding-bottom: 40px;
 	margin: 0 auto;
 
 	-webkit-box-align: center;
@@ -897,7 +896,7 @@ input[type="radio"].visually-hidden {
 
 .socials-button {
 	display: block;
-	width: 45px;
+	width: 46px;
 	height: 48px;
 
 	background-color: #81b3d2;
@@ -948,7 +947,7 @@ input[type="radio"].visually-hidden {
 .button-copyright {
 	display: block;
 	width: 116px;
-	height: 36px;
+	height: 39px;
 }
 
 .button-copyright:hover svg,
